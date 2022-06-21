@@ -1,0 +1,22 @@
+.input-small {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 4px;
+  text-align: center;
+}
+.input-label-inline {
+  padding-right: 20px;
+  font-style: italic;
+}
+.parameter {
+  font-weight: bold;
+  margin: 0 4px;
+}
+.avogadro-table {
+  width: 75%;
+  display: inline-table;
+}
+.avogadro-table tr th,
+.avogadro-table tr td {
+  width: 70px;
+}

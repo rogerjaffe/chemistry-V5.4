@@ -1,0 +1,22 @@
+.input-small {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 4px;
+  text-align: center;
+}
+.input-label-inline {
+  padding-right: 20px;
+  font-style: italic;
+}
+.parameter {
+  font-weight: bold;
+  margin: 0 4px;
+}
+.small-table {
+  width: 50%;
+  display: inline-table;
+}
+.small-table tr th,
+.small-table tr td {
+  width: 33%;
+}

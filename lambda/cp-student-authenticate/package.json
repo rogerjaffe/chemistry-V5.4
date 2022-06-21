@@ -1,0 +1,23 @@
+{
+  "name": "cp-generate-jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "zip": "zip cp-student-authenticate.zip index.js",
+    "upload": "FUNCTION=cp-student-authenticate ../deploy-function.sh",
+    "deploy": "npm run zip && npm run upload",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Roger Jaffe",
+  "copyright": "2022",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1"
+  }
+}

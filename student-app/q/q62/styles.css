@@ -1,0 +1,24 @@
+.input-small {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 4px;
+  text-align: center;
+}
+.input-label-inline {
+  padding-right: 20px;
+  font-style: italic;
+}
+.parameter {
+  font-weight: bold;
+  margin: 0 4px;
+}
+.top-equation {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+}
+.support-equation {
+  padding: 8px 0;
+}
+.panel1-section {
+  font-family: monospace;
+}

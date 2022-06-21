@@ -1,0 +1,7 @@
+**/node_modules
+dist
+**/.idea
+**/*-DELETE.*
+student-app/scripts/format.js
+student-app/scripts/format.html
+Notes

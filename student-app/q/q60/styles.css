@@ -1,0 +1,33 @@
+.input-compound {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 4px;
+  text-align: center;
+}
+.input-label-inline {
+  padding-right: 20px;
+  font-style: italic;
+}
+.parameter {
+  font-weight: bold;
+  margin: 0 4px;
+}
+.question {
+  width: 75%;
+}
+.spellings-header {
+  font-weight: bold;
+}
+.spellings {
+  width: 25%;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.list {
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 0 30px;
+}
+.heading {
+  text-align: left;
+}

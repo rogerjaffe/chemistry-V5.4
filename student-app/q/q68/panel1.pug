@@ -1,0 +1,20 @@
+div
+  div#structure
+  input(type="hidden" name="input" idx="0")
+  div.checkboxes
+    div.checkbox
+      input(type="radio" name="answer" value="sp" onclick="window.cp.setAnswers(this)")
+      span.left-space sp
+    div.checkbox
+      input(type="radio" name="answer" value="sp2" onclick="window.cp.setAnswers(this)")
+      span.left-space sp<sup>2</sup>
+    div.checkbox
+      input(type="radio" name="answer" value="sp3" onclick="window.cp.setAnswers(this)")
+      span.left-space sp<sup>3</sup>
+    div.checkbox
+      input(type="radio" name="answer" value="none" onclick="window.cp.setAnswers(this)")
+      span.left-space None
+    div.checkbox
+      input(type="radio" name="answer" value="cbd" onclick="window.cp.setAnswers(this)")
+      span.left-space Can't be determined
+

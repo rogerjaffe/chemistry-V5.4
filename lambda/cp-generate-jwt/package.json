@@ -1,0 +1,23 @@
+{
+  "name": "cp-generate-jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "zip": "zip cp-generate-jwt.zip index.js",
+    "upload": "FUNCTION=cp-generate-jwt ../deploy-function.sh",
+    "deploy": "npm run zip && npm run upload",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Roger Jaffe",
+  "copyright": "2022",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.8"
+  }
+}

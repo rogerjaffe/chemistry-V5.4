@@ -1,0 +1,10 @@
+div
+  div#question
+  input(type="hidden" name="input" idx="0")
+  div.checkboxes
+    div.checkbox
+      input(type="radio" name="answer" value="1" onclick="window.cp.setAnswers(this)")
+      span.left-space Right to Left
+    div.checkbox
+      input(type="radio" name="answer" value="2" onclick="window.cp.setAnswers(this)")
+      span.left-space Left to Right

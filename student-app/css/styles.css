@@ -1,0 +1,97 @@
+.container {
+  margin-top: 20px;
+}
+.title {
+  font-size: 2rem;
+}
+.img1 {
+  text-align: left;
+}
+.img2 {
+  text-align: right;
+}
+.header {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0 5px;
+}
+.header-title {
+  padding-top: 8px;
+}
+.card-header {
+  background-color: rgb(209, 228, 241);
+}
+.card-footer {
+  text-align: center;
+}
+.card-title {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-top: 5px;
+}
+img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.filter {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.filter label {
+  padding-right: 10px;
+}
+
+.sequence {
+  display: inline-block;
+  width: 30px;
+}
+.scroller {
+  height: 500px;
+  overflow-y: scroll;
+}
+.seq-list-item {
+  display: table-cell;
+  font-size: 1rem;
+}
+.list-group {
+  font-size: 0.9rem;
+}
+.list-group-item {
+  cursor: pointer;
+}
+.list-group-item:hover:not(.active) {
+  color: blue;
+  background-color: #eee;
+}
+
+.question-body {
+  min-height: 300px;
+  text-align: center;
+}
+.content-section {
+  margin-top: 5px;
+  padding: 10px;
+}
+.instruction-section {
+  border-bottom: 1px solid #aaa;
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+}
+.control-section {
+  margin-top: 25px;
+}
+.version {
+  text-align: left;
+  font-size: 0.8rem;
+}
+.summary-table-name {
+  text-align: left;
+}
+.disabled-question {
+  color: #999999 !important;
+}
+.disabled-question:hover {
+  background-color: white !important;
+  cursor: default !important;
+}

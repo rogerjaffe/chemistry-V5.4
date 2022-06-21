@@ -1,0 +1,33 @@
+{
+  "name": "chemistry-practice",
+  "version": "5.4.11",
+  "description": "Chemistry Practice",
+  "main": "index.js",
+  "scripts": {
+    "deploy-student-app": "./deploy-student-app.sh",
+    "generateJwt": "node utilities/generateJwt.js",
+    "serve-dev": "hrs -p 5003 student-app",
+    "serve-prod": "hrs -p 5002 dist",
+    "test": "jest",
+    "student-app-test": "jest student-app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/pug": "^2.0.6",
+    "@types/uglify-js": "^3.13.1",
+    "copyfiles": "^2.4.1",
+    "jest": "^27.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "prettier": "^2.6.1",
+    "pug": "^3.0.2",
+    "rimraf": "^3.0.2",
+    "simple-hot-reload-server": "^1.2.0",
+    "typescript": "^4.6.3",
+    "uglify-js": "^3.15.3",
+    "uglifycss": "0.0.29"
+  }
+}

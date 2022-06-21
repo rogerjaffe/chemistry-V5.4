@@ -1,0 +1,111 @@
+doctype html
+html(lang='en')
+  head
+    title Chemistry Practice!
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous")
+    link(href="/css/styles.css" rel="stylesheet" crossorigin="anonymous")
+    link(href="/css/loading.css" rel="stylesheet" crossorigin="anonymous")
+    link(href="/css/utility.css" rel="stylesheet" crossorigin="anonymous")
+    link(rel="icon" href="/assets/favicon.ico")
+    link(rel="apple-touch-icon" href="/assets/logo192.png")
+    link(rel="manifest" crossorigin="use-credentials" href="/assets/manifest.json")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="theme-color" content="#000000")
+    meta(name="Chemistry Practice" content="Chemistry Practice Website")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="/scripts/acidBaseList.js")
+    script(src="/scripts/api.js")
+    script(src="/scripts/check.js")
+    script(src="/scripts/library.js")
+    script(src="/scripts/constants.js")
+    script(src="/scripts/controls.js")
+    script(src="/scripts/equations.js")
+    script(src="/scripts/updateLog.js")
+    script(src="/scripts/random.js")
+    script(src="/scripts/questionList.js")
+    script(src="/scripts/question.js")
+    script(src="/scripts/periodicTable.js")
+    script(src="/scripts/saltSolutions.js")
+    script(src="/scripts/compoundList.js")
+    script(src="/scripts/compoundParser.js")
+    script(src="/scripts/compoundUtils.js")
+    script(src="/scripts/phSubstanceList.js")
+    script(src="/scripts/closure.js")
+    script#script
+    style#style
+
+  body
+    div.container
+      div.card
+        div.card-header.text-center
+          div.row.header
+            div.col-md-3.d-none.d-sm-block
+              img.img1(src="/assets/beaker-sm.png" alt="Beaker icon")
+            div.col-md-6.col-xs-12
+              h3.header-title Chemistry Homework!
+            div.col-md-3.d-none.d-sm-block
+              img.img2(src="/assets/beaker-sm.png" alt="Beaker icon")
+        div.card-body
+          div.row
+            div.col-md-4
+              div.card
+                div.card-header
+                  div.card-title Question list
+                div.card-body
+                  div.filter
+                    label Filter:
+                    input(type="text" onkeyup="onChangeFilter(this)")
+                  div.scroller
+                    div.list-group
+                      div#question-list
+
+            div.col-md-8
+              div.card
+                div.card-header
+                  div#title.card-title
+                    div.skeleton.title
+                      div.loading
+                div#question-body.card-body.question-body
+                  div#instructions.row.content-section.instruction-section
+                    div.skeleton.instructions
+                      div.loading
+                      div.loading
+                  div#panel1.row.content-section.panel1-section
+                    div.skeleton.panel1
+                      div.loading
+                      div.loading
+                      div.loading
+                      div.loading
+                  div#panel2.row.content-section.panel2-section
+                  div.row.control-section
+                    div.col-md-4.d-grid.gap-2
+                      button.btn.btn-primary(type="button" id="check-answer-button" onclick="window.cp.check()" disabled) Check answer
+                    div.col-md-4.text-center
+                      div.correct.status-btn.hidden(id="correct-btn") You are CORRECT!
+                      div.incorrect.status-btn.hidden(id="incorrect-btn") Sorry, that is INCORRECT!
+                    div.col-md-4.text-right.d-grid.gap-2
+                      button.btn.btn-primary(type="button" id="new-question-button" onClick="window.cp.newQuestion()") New question
+
+                div.card-footer
+                  input(type="hidden" id="jwt")
+                  input(type="hidden" id="text")
+                  input(type="hidden" id="seq")
+                  h5 Results Summary
+                  table(class="table summary-table")
+                    thead
+                      tr
+                        th(class="col-md-1") Seq
+                        th(class="col-md-8 summary-table-name") Name
+                        th(class="col-md-1")
+                          span(class="correct") &check;
+                        th(class="col-md-1")
+                          span(class="incorrect") &#10005;
+                        th(class="col-md-1") Pct
+                    tbody(id="summary-table")
+
+        div(class="card-footer")
+          div(class="version")
+            span Copyright &copy; 2022 Roger Jaffe</span>
+            br
+            span Version #{version}
+

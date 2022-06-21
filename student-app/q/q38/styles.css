@@ -1,0 +1,25 @@
+.input-small {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 4px;
+  text-align: center;
+}
+.input-label-inline {
+  padding-right: 20px;
+  font-style: italic;
+}
+.parameter {
+  font-weight: bold;
+  margin: 0 4px;
+}
+.single-digit-input {
+  width: 38px;
+  margin: 0 4px;
+}
+.top-row {
+  text-align: left;
+}
+.bottom-row {
+  text-align: right;
+  margin-top: 10px;
+}

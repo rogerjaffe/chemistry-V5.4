@@ -1,0 +1,11 @@
+div
+  div#structure
+  input(type="hidden" name="input" idx="0")
+  div.checkboxes
+    div.checkbox
+      input(type="radio" name="answer" value="direct" onclick="window.cp.setAnswers(this)")
+      span.left-space Direct
+    div.checkbox
+      input(type="radio" name="answer" value="indirect" onclick="window.cp.setAnswers(this)")
+      span.left-space Indirect
+

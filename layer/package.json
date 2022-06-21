@@ -1,0 +1,29 @@
+{
+  "name": "chemistry-v5-layer",
+  "version": "5.2.0",
+  "description": "Lambda layers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerjaffe/chemistry-v5.2.git"
+  },
+  "scripts": {
+    "build-layer": "node build-layer",
+    "zip-layer": "zip -r nodejs.zip nodejs",
+    "upload-layer": "aws --output json --no-paginate lambda publish-layer-version --layer-name chemistry-library --zip-file fileb://./nodejs.zip --compatible-runtimes nodejs14.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "date-fns": "^2.28.0",
+    "jsonwebtoken": "^8.5.1",
+    "nanoid": "^3.3.1",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "random": "^3.0.6"
+  },
+  "devDependencies": {
+    "copy-node-modules": "^1.1.1"
+  }
+}

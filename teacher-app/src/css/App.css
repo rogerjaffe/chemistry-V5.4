@@ -1,0 +1,79 @@
+.app {}
+
+.header {
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0 5px 0;
+}
+
+.header .img1 {width: 50px; text-align: left;}
+.header .img2 {width: 50px; text-align: right;}
+
+.card-header {
+  background-color: rgb(208,228,242) !important;
+  /*background-color: rgb(244,204,205) !important;*/
+}
+
+.error {color: red;}
+
+.footer {
+  font-size: 0.80rem;
+  font-style: italic;
+  text-align: left;
+}
+
+.card {
+  margin: 5px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+.login-account-links {margin-top: 20px !important;}
+.login-account-links-left {text-align: left;}
+.login-account-links-right {text-align: right;}
+
+.title {text-align: center;}
+.message {text-align: center; line-height: 5px; margin-top: 20px !important;}
+
+.links {text-align: center; margin-top: 15px !important;}
+
+.link {color: dodgerblue; text-decoration: underline; cursor: pointer;}
+
+.toolbar {text-align:center; margin-bottom: 20px;}
+.toolbar-button {margin: 0 15px; width: 125px;}
+
+.teacher-content {margin-top: 20px !important;}
+.spacer {margin-top: 20px !important;}
+
+.csv-contents {height: 400px;}
+.right-justify {text-align:right;}
+.center-justify {text-align:center;}
+.right-spacer {margin-right: 10px;}
+
+.edit-student-title {margin-top: 8px;}
+
+.student-list {height: 500px; overflow-y: scroll;}
+.student-list-sort {text-align: center;}
+.student-list-item {cursor: pointer;}
+.student-list-selected {background-color: dodgerblue;}
+.student-list-active-link {margin-right: 5px; color: dodgerblue; text-decoration: underline; cursor: pointer;}
+.student-list-inactive-link {margin-right: 5px; color: white; background-color: dodgerblue;}
+
+.dashboard-table-centered {text-align: center;}
+.dashboard-table-name {text-align: left;}
+.dashboard-name-studentid {width: 36%;}
+.dashboard-table {width: 100%;}
+.dashboard-table td {border: 1px solid #ccc;}
+.dashboard-log-item {font-size: 0.60rem;}
+.correct {color: green;}
+.incorrect {color: red;}
+.expandable {cursor: pointer;}
+.question-included { background-color: rgb(217,233,212);}
+.question-row {border: 1px solid #aaa; cursor: pointer;}
+.message-header {margin-top: 10px;}
+.header-bold {font-weight: bold; text-align:center;}
+
+.rotate {writing-mode: vertical-lr; transform: rotate(-160deg); font-size: 0.85rem;}

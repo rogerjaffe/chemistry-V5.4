@@ -1,0 +1,17 @@
+div
+  span.parameter(id="val1")
+  span.parameter(id="unit1")
+  span to
+  span.parameter(id="unit2")
+  input(type="hidden" name="input" idx="0")
+  div.checkboxes
+    div.checkbox
+      input(type="radio" name="answer" value="smaller" onclick="window.cp.setAnswers(this)")
+      span.left-space Smaller
+    div.checkbox
+      input(type="radio" name="answer" value="larger" onclick="window.cp.setAnswers(this)")
+      span.left-space Larger
+    div.checkbox
+      input(type="radio" name="answer" value="same" onclick="window.cp.setAnswers(this)")
+      span.left-space Same
+
